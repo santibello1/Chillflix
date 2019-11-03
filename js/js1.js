@@ -1,16 +1,19 @@
 window.onload = function(){
 
-  fetch('http://example.com/movies.json')
-    .then(function(response) {
-      return response.json();
-    })
-    .then(function(myJson) {
-      console.log(myJson);
+  var url = "";
+fetch(url)
+	.then(function (res) {
+		return res.json();
+	})
+	.then(function (informacion) {
+		// hacer algo aquí con la información que llega de la API
+	})
+	.catch(function (errors) {
+		console.log(errors);
+	});
+Contraer
 
-    })
-    .catch(function(error){
-      console.log("el errror es: "+ error)
-    })
+
 
 
 

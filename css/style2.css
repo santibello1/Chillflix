@@ -11,7 +11,7 @@ header {
 
 .generos {
 position: relative;
-left: 10px;
+left: 0px;
 width: 150px;
 padding-top: 25px;
 }
@@ -30,12 +30,12 @@ padding-top: 25px;
   background-color: black;
 }
 
-.generos ul li:hover{
+.generos ul li:hover a{
   background-color: #434343;
 }
 
-.generos ul li{
-  padding: 10px;
+.generos ul li a {
+  padding: 8px;
 }
 
 .listaGeneros {
@@ -69,7 +69,7 @@ padding-top: 25px;
 
 .logo {
   position: relative;
-  left: 900px;
+  left: 890px;
   top: 10px;
   width: 100px;
   height: 80px;
@@ -80,9 +80,31 @@ padding-top: 25px;
 
 /*Empieza el Main**/
 
+.titulos {
+  text-align: center;
+  font-family: sans-serif;
+  color: black;
+  margin-top: 150px;
+}
 
 
+.container {
+  border: red solid 2px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
+.serie {
+  border: black solid 2px;
+  width: 20%;
+  padding-top: 3px;
+  height: 10px;
+
+}
 
 
 
@@ -92,8 +114,8 @@ padding-top: 25px;
 /*Empieza el Footer*/
 footer {
   margin:0;
-  position: absolute;
   bottom: 0px;
+  position: fixed;
   background-color: rgb(0,0,0);
   height: 80px;
   width: 100%;
