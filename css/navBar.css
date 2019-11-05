@@ -1,17 +1,20 @@
 header {
   margin:0;
-  position: absolute;
+
   background-color: rgb(0,0,0);
   height: 120px;
   width: 100%;
   display: flex;
   font-family: Arial,Helvetica,sans-serif;
   top:0;
+  position:absolute;
+
+
 }
 
 .generos {
 position: relative;
-left: 10px;
+left: 0px;
 width: 150px;
 padding-top: 25px;
 }
@@ -30,12 +33,12 @@ padding-top: 25px;
   background-color: black;
 }
 
-.generos ul li:hover{
+.generos ul li:hover a{
   background-color: #434343;
 }
 
-.generos ul li{
-  padding: 10px;
+.generos ul li a {
+  padding: 8px;
 }
 
 .listaGeneros {
@@ -48,11 +51,11 @@ padding-top: 25px;
 
 
 .buscador {
-  position: relative;
-  top: 25px;
+  position: absolute;
+  right: 25px;
   width: 300px;
   height: 40px;
-  left: 10px;
+  left: 100px;
   margin-right: auto;
 }
 
@@ -68,55 +71,20 @@ padding-top: 25px;
 
 
 .logo {
-  position: relative;
-  left: 900px;
+  position: absolute;
+  left: 1200px;
   top: 10px;
   width: 100px;
   height: 80px;
-}
 
-/* Termina el Header*/
-
-
-/*Empieza el Main**/
-
-
-
-
-
-
-
-/*Termina el main*/
-
-
-/*Empieza el Footer*/
-footer {
-  margin:0;
-  position: absolute;
-  bottom: 0px;
-  background-color: rgb(0,0,0);
-  height: 80px;
-  width: 100%;
-  display: flex;
-  font-family: Arial,Helvetica,sans-serif;
 
 }
 
-footer ul {
+.home a{
   color: white;
-  list-style: none;
-  display: flex;
-}
-
-footer ul li{
   text-decoration: none;
-  padding: 10px;
-}
+  padding: 10px 15PX;
+  top: 10px;
+  position: absolute;
 
-.logo2 {
-  position: relative;
-  left: 1000px;
-  top: 15px;
-  width: 90px;
-  height: 50px;
 }

@@ -1,0 +1,36 @@
+
+
+
+
+.titulos {
+  text-align: center;
+  font-family: sans-serif;
+  color: black;
+  margin-top: 150px;
+}
+
+
+.container {
+  border: red solid 2px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.serie {
+  border: black solid 2px;
+  width: 20%;
+  padding-top: 3px;
+  height: 10px;
+
+}
+
+
+
+/*Termina el main*/
+
+
+/*Empieza el Footer*/
