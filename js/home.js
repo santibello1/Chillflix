@@ -35,10 +35,19 @@ window.addEventListener("load",function(){
     })
     .then(function(objetoLiteralRespuesta) {
       console.log(objetoLiteralRespuesta);
+      var arrayMejorPuntaje = objetoLiteralRespuesta.results
+      var puntaje = document.querySelector ('.mejorPuntuadas')
+      var div = ''
+      console.log(arrayMejorPuntaje);
+      for (var i = 0; i < arrayMejorPuntaje.length; i++) {
 
-        // <div class="serie">
-        //     <img src="" alt="">
-        // </div>
+
+        div = '<div class="serie">'
+        div +=     '<img src="'+URL_IMG+arrayMejorPuntaje[i].poster_path+'" alt="" style="heigth:100px;width:150px;">'
+        div += '</div>'
+
+        mejorPuntuadas.innerHTML += div
+      }
     })
 
   var URL_AL_AIRE_HOY = "on_the_air"
@@ -49,10 +58,20 @@ window.addEventListener("load",function(){
     })
     .then(function(objetoLiteralRespuesta) {
       console.log(objetoLiteralRespuesta);
+      var arrayAlAireHoy = objetoLiteralRespuesta.results
+      var alAireHoy = document.querySelector ('.alAireHoy')
+      var div = ''
+      console.log(arrayAlAireHoy);
+      for (var i = 0; i < arrayAlAireHoy.length; i++) {
 
-        // <div class="serie">
-        //     <img src="" alt="">
-        // </div>
+
+        div = '<div class="serie">'
+        div +=     '<img src="'+URL_IMG+arrayAlAireHoy[i].poster_path+'" alt="" style="heigth:100px;width:150px;">'
+        div += '</div>'
+
+        alAireHoy.innerHTML += div
+      }
+    })// </div>
     })
 
 
