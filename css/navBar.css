@@ -14,6 +14,8 @@ header {
   margin-top: 40px;
   left: 0px;
   width: 800px;
+  text-decoration: none;
+  list-style: none;
 
 
 }
@@ -21,12 +23,14 @@ header {
 .generos {
 width: 150px;
 margin-left: 0px;
+text-decoration: none;
 }
 
 .generos ul {
   padding: 0px;
   margin: 0px;
   list-style: none;
+  text-decoration: none;
 
 }
 
@@ -59,6 +63,7 @@ margin-left: 0px;
 
   height: 20px;
   margin-top: 9px;
+  text-decoration: none;
 
 }
 
@@ -68,7 +73,20 @@ margin-left: 0px;
   margin-right: 100px;
 
   }
+.series{
+  height: 20px;
+  margin-top: 9px;
+  color: white;
+  text-decoration: none;
 
+}
+.series a{
+  color: white;
+  text-decoration: none;
+  margin-right: 100px;
+
+
+  }
 .buscador {
   width: 300px;
   height: 40px;
@@ -83,9 +101,9 @@ margin-left: 0px;
   height: 40px;
   padding: 5px;
   font-size: 15px;
-  top: 1px;
+  top: -40px;
   color: white;
-  left: 25px;
+  left: 330px;
 }
 
 .boton:hover{
