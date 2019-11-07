@@ -29,6 +29,19 @@
 
 }
 
+body{
+  background-color: #262525;
+}
 
+.populares{
+  color: white;
+}
 
+.mejorPuntuadas{
+  color: white;
+}
+
+.alAireHoy{
+  color: white;
+}
 /*Termina el main*/
