@@ -31,12 +31,13 @@ window.addEventListener("load",function(){
 
          for (var i = 0; i < arrayDeGeneros.length; i++) {
             genreName = arrayDeGeneros[i].name
-            generos.innerHTML += '<li><a href="#'+arrayDeGeneros[i].name+'">'+genreName+'</a></li>';
+            generos.innerHTML += '<li><a href="genres.html?idDeGenero='+arrayDeGeneros[i].id+'&nombreDeGenero='+genreName+'">'+genreName+'</a></li>';
             console.log(genreName);
 
          }
 
     })
 
+  
 
 })

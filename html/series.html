@@ -4,13 +4,18 @@
     <meta charset="utf-8">
     <title> Chillflix </title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../uikit/css/uikit.css">
+
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/genres.css">
     <link rel="stylesheet" href="../css/navBar.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/series.css">
+
     <script src="https://kit.fontawesome.com/7d40ec53ba.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
   </head>
   <body>
@@ -42,7 +47,7 @@
 
       </ul>
       <div class="container_logo">
-        <img src="../images/logo.png" alt="" class="logo">
+        <img src="../images/logofinal.PNG" alt="" class="logo">
       </div>
       <div class="logosHeader">
       <ul>
@@ -57,16 +62,41 @@
       </ul>
     </header>
 
+
 <main>
 
   <section class="populares">
-<h2 class="titulos"> Populares </h2>
+    <h2 class="titulos"> Populares </h2>
+    <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider id="contPop">
+      <ul class="uk-slider-items uk-child-width-1-6@s uk-child-width-1-4@">
+      </ul>
+      <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+      <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    </div>
   </section>
+
+
+
+
   <section class="mejorPuntuadas">
-<h2 class="titulos"> Mejor Puntuadas</h2>
+    <h2 class="titulos"> Mejor Puntuadas</h2>
+    <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider id="contPunt">
+      <ul class="uk-slider-items uk-child-width-1-6@s uk-child-width-1-4@">
+      </ul>
+      <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+      <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    </div>
   </section>
+
+
   <section class="alAireHoy">
-<h2 class="titulos"> Al Aire Hoy </h2>
+    <h2 class="titulos"> Al Aire Hoy </h2>
+    <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider id="contAire">
+      <ul class="uk-slider-items uk-child-width-1-6@s uk-child-width-1-4@">
+      </ul>
+      <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+      <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    </div>
   </section>
 
 </main>
@@ -87,3 +117,5 @@
 
 <script type="text/javascript" src="../js/series.js"></script>
 <script type="text/javascript" src="../js/navBar.js"></script>
+<script type="text/javascript" src="../uikit/js/uikit-icons.js"> </script>
+<script type="text/javascript" src="../uikit/js/uikit.js"> </script>

@@ -13,17 +13,19 @@ window.addEventListener("load",function(){
     .then(function(objetoLiteralRespuesta) {
       console.log(objetoLiteralRespuesta);
       var arrayPopulares = objetoLiteralRespuesta.results
-      var populares = document.querySelector ('.populares')
+      var populares = document.querySelector ('#contPop ul')
       var div = ''
       console.log(arrayPopulares);
       for (var i = 0; i < arrayPopulares.length; i++) {
 
-
-        div = '<div class="serie">'
-        div +=     '<img src="'+URL_IMG+arrayPopulares[i].poster_path+'" alt="" style="heigth:100px;width:150px;">'
-        div += '</div>'
+        div = '<li>'
+        div = '<a href="detalleDePeliculas.html?idPeli=' + arrayPopulares[i].id + '">'
+        div += '<img src="'+URL_IMG+arrayPopulares[i].poster_path+'" alt="">'
+        div += '</a>'
+        div += '</li>'
 
         populares.innerHTML += div
+
       }
     })
 
@@ -36,16 +38,17 @@ window.addEventListener("load",function(){
     .then(function(objetoLiteralRespuesta) {
       console.log(objetoLiteralRespuesta);
       var arrayMejorPuntaje = objetoLiteralRespuesta.results
-      var puntaje = document.querySelector ('.mejorPuntuadas')
+      var puntaje = document.querySelector ('.mejorPuntuadas ul')
       var div = ''
       console.log(arrayMejorPuntaje);
       for (var i = 0; i < arrayMejorPuntaje.length; i++) {
 
 
-        div = '<div class="serie">'
-        div +=     '<img src="'+URL_IMG+arrayMejorPuntaje[i].poster_path+'" alt="" style="heigth:100px;width:150px;">'
-        div += '</div>'
-
+        div = '<li>'
+        div = '<a href="detalleDePeliculas.html?idPeli=' + arrayMejorPuntaje[i].id + '">'
+        div += '<img src="'+URL_IMG+arrayMejorPuntaje[i].poster_path+'" alt="">'
+        div += '</a>'
+        div += '</li>'
         puntaje.innerHTML += div
       }
     })
@@ -59,15 +62,17 @@ window.addEventListener("load",function(){
     .then(function(objetoLiteralRespuesta) {
       console.log(objetoLiteralRespuesta);
       var arrayAlAireHoy = objetoLiteralRespuesta.results
-      var alAireHoy = document.querySelector ('.alAireHoy')
+      var alAireHoy = document.querySelector ('.alAireHoy ul')
       var div = ''
       console.log(arrayAlAireHoy);
       for (var i = 0; i < arrayAlAireHoy.length; i++) {
 
 
-        div = '<div class="serie">'
-        div +=     '<img src="'+URL_IMG+arrayAlAireHoy[i].poster_path+'" alt="" style="heigth:100px;width:150px;">'
-        div += '</div>'
+        div = '<li>'
+        div = '<a href="detalleDePeliculas.html?idPeli=' + arrayAlAireHoy[i].id + '">'
+        div += '<img src="'+URL_IMG+arrayAlAireHoy[i].poster_path+'" alt="">'
+        div += '</a>'
+        div += '</li>'
 
         alAireHoy.innerHTML += div
       }
