@@ -46,7 +46,7 @@ window.addEventListener("load",function(){
         div +=     '<img src="'+URL_IMG+arrayMejorPuntaje[i].poster_path+'" alt="" style="heigth:100px;width:150px;">'
         div += '</div>'
 
-        mejorPuntuadas.innerHTML += div
+        puntaje.innerHTML += div
       }
     })
 
@@ -73,7 +73,3 @@ window.addEventListener("load",function(){
       }
     })// </div>
     })
-
-
-
-})

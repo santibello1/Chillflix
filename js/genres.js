@@ -31,7 +31,6 @@ window.addEventListener("load",function(){
 
          for (var i = 0; i < arrayDeGeneros.length; i++) {
             genreName = arrayDeGeneros[i].name
-            generos.innerHTML += '<li><a href="#'+arrayDeGeneros[i].name+'">'+genreName+'</a></li>';
             console.log(genreName);
             main_str  = '<article class="genre">'
             main_str +=  '<h2 class="titulos" id="'+ genreName +'">'+ genreName +'</h2>'
@@ -48,7 +47,7 @@ window.addEventListener("load",function(){
                 for (var i = 0; i < 1; i++) {
 
                     main_str += '<div class="serie">'
-                    main_str +=    '<img src="'+URL_IMG+arrayDeSeries[i].poster_path+'" style="heigth:100px;width:150px;">'
+                    main_str +=    '<img src="'+URL_IMG+arrayDeSeries[i].poster_path+'"style="heigth:100px;width:150px;">'
                     main_str += '</div>'
                     // console.log(main_str);
                   }
@@ -59,9 +58,6 @@ window.addEventListener("load",function(){
          }
 
     })
-
-
-
 
 
 })
