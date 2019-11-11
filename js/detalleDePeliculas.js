@@ -10,7 +10,7 @@ console.log(id);
 
 var URL_DETALLE = "https://api.themoviedb.org/3/tv/"+id+"?api_key=6155fe2039bc62a9217a46c95e05b980&language=en-US";
 
-var serie = document.querySelector('.serie')
+var serie = document.querySelector('main')
 
 
 fetch(URL_DETALLE)
@@ -30,7 +30,6 @@ fetch(URL_DETALLE)
      serie.innerHTML += '<p class="">'+"Puntaje:"+''+unaSerie.vote_average+'</p>'
      serie.innerHTML += '<p class="">'+"Generos:"+''+unaSerie.genres+'</p>'
 
-    serie.innerHTML += '<p class="">'+unaSerie.overview+'</p>'
 
 
   })

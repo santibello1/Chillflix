@@ -32,9 +32,21 @@ window.addEventListener("load",function(){
          for (var i = 0; i < arrayDeGeneros.length; i++) {
             genreName = arrayDeGeneros[i].name
             //console.log(genreName);
-            main_str  = '<article class="genre">'
-            main_str +=  '<h2 class="titulos" id="'+ arrayDeGeneros[i].id +'">'+ genreName +'</h2>'
-            main_str += '<div>'
+
+
+          //  main_str  = '<article class="genre">'
+          //  main_str +=  '<h2 class="titulos" id="'+ arrayDeGeneros[i].id +'">'+ genreName +'</h2>'
+        //    main_str += '<div>'
+
+            main_str += '<section class="genre">'
+            main_str += '<h2 class="titulos" id="'+ arrayDeGeneros[i].id +'">'+ genreName +'</h2>'
+            main_str += '<div class="uk-position-relative uk-visible-toggle uk-light" uk-slider id="cont">'
+            main_str += '<ul class="uk-slider-items uk-child-width-1-6@s uk-child-width-1-4@">'
+            main_str += '</ul>'
+            main_str += '<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>'
+            main_str += '<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>'
+            main_str += '</div>'
+            main_str += '</section>'
 
              fetch(URL_GENRES_IMG+arrayDeGeneros[i].id)
                .then(function(response) {
@@ -42,18 +54,24 @@ window.addEventListener("load",function(){
                })
                .then(function(objetoLiteralSeries) {
                  // console.log(objetoLiteralSeries);
-                 var test = document.querySelector(".genre div")
+                 var test = document.querySelector("#cont ul")
                 arrayDeSeries = objetoLiteralSeries.results
                   for (var i = 0; i < 6; i++) {
                       // console.log(URL_IMG+arrayDeSeries[i].poster_path);
-                      test.innerHTML += '<div class="serie">'
-                      test.innerHTML +=    '<img src="'+URL_IMG+arrayDeSeries[i].poster_path+'" width="100">'
-                      test.innerHTML += '</div>'
+                    // test.innerHTML += '<div class="serie">'
+                    //  test.innerHTML +=    '<img src="'+URL_IMG+arrayDeSeries[i].poster_path+'" width="100">'
+                    //  test.innerHTML += '</div>'
+
+                      test.innerHTML += '<li class="serie">'
+                      test.innerHTML += '<a href="detalleDePeliculas.html?idPeli=' +arrayDeSeries[i].id+ '">'
+                      test.innerHTML += '<img src="'+URL_IMG+arrayDeSeries[i].poster_path+'" alt="">'
+                      test.innerHTML += '</a>'
+                      test.innerHTML += '</li>'
                       // console.log(main_str);
                     }
 
                })
-               main_str += '</div></article>'
+               //main_str += '</div></article>'
                console.log(main_str);
                main.innerHTML += main_str
          }

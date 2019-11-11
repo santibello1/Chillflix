@@ -1,5 +1,8 @@
 
-
+.generos:hover .listaGeneros {
+  display: block;
+  
+}
 
 
 .titulos {
