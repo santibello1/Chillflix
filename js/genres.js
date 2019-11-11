@@ -36,17 +36,16 @@ window.addEventListener("load",function(){
 
           //  main_str  = '<article class="genre">'
           //  main_str +=  '<h2 class="titulos" id="'+ arrayDeGeneros[i].id +'">'+ genreName +'</h2>'
-        //    main_str += '<div>'
+          //  main_str += '<div>'
 
-            main_str += '<section class="genre">'
-            main_str += '<h2 class="titulos" id="'+ arrayDeGeneros[i].id +'">'+ genreName +'</h2>'
-            main_str += '<div class="uk-position-relative uk-visible-toggle uk-light" uk-slider id="cont">'
-            main_str += '<ul class="uk-slider-items uk-child-width-1-6@s uk-child-width-1-4@">'
-            main_str += '</ul>'
-            main_str += '<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>'
-            main_str += '<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>'
-            main_str += '</div>'
-            main_str += '</section>'
+  main_str += '<h2 class="titulos" id="'+ arrayDeGeneros[i].id +'">'+ genreName +'</h2>'
+  main_str += '<div class="uk-position-relative uk-visible-toggle uk-light" uk-slider id="cont">'
+  main_str += '<ul class="uk-slider-items uk-child-width-1-6@s uk-child-width-1-4@">'
+  main_str += '</ul>'
+  main_str += '<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>'
+  main_str += '<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>'
+  main_str += '</div>'
+  main_str += '</section>'
 
              fetch(URL_GENRES_IMG+arrayDeGeneros[i].id)
                .then(function(response) {
