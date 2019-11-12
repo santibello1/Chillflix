@@ -1,9 +1,11 @@
 
 .generos:hover .listaGeneros {
   display: block;
-  
 }
 
+#cont{
+  border: solid red 2px;
+}
 
 .titulos {
   text-align: center;

@@ -34,18 +34,19 @@ window.addEventListener("load",function(){
             //console.log(genreName);
 
 
-          //  main_str  = '<article class="genre">'
-          //  main_str +=  '<h2 class="titulos" id="'+ arrayDeGeneros[i].id +'">'+ genreName +'</h2>'
+            main_str  = '<section class="genre">'
+            main_str +=  '<h2 class="titulos" id="'+ arrayDeGeneros[i].id +'">'+ genreName +'</h2>'
           //  main_str += '<div>'
 
-  main_str += '<h2 class="titulos" id="'+ arrayDeGeneros[i].id +'">'+ genreName +'</h2>'
+//  main_str += '<h2 class="titulos" id="'+ arrayDeGeneros[i].id +'">'+ genreName +'</h2>'
   main_str += '<div class="uk-position-relative uk-visible-toggle uk-light" uk-slider id="cont">'
-  main_str += '<ul class="uk-slider-items uk-child-width-1-6@s uk-child-width-1-4@">'
+ main_str += '<ul class="uk-slider-items uk-child-width-1-6@s uk-child-width-1-4@">'
   main_str += '</ul>'
   main_str += '<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>'
   main_str += '<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>'
   main_str += '</div>'
-  main_str += '</section>'
+
+
 
              fetch(URL_GENRES_IMG+arrayDeGeneros[i].id)
                .then(function(response) {
@@ -62,8 +63,7 @@ window.addEventListener("load",function(){
                     //  test.innerHTML += '</div>'
 
                       test.innerHTML += '<li class="serie">'
-                      test.innerHTML += '<a href="detalleDePeliculas.html?idPeli=' +arrayDeSeries[i].id+ '">'
-                      test.innerHTML += '<img src="'+URL_IMG+arrayDeSeries[i].poster_path+'" alt="">'
+                      test.innerHTML += '<a href="detalleDePeliculas.html?idPeli=' +arrayDeSeries[i].id+ '"><img src="'+URL_IMG+arrayDeSeries[i].poster_path+'" width="100">'
                       test.innerHTML += '</a>'
                       test.innerHTML += '</li>'
                       // console.log(main_str);
