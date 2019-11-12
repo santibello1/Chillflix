@@ -27,7 +27,7 @@ fetch(URL_DETALLE)
      serie.innerHTML += '</div>'
      serie.innerHTML += '<p class="parrafo">'+unaSerie.overview+'</p>'
      serie.innerHTML += '<p class="parrafo">'+"Puntaje:"+' '+unaSerie.vote_average+'</p>'
-     serie.innerHTML += '<p class="parrafo">'+"Generos:"+' '+unaSerie.genres+'</p>'
+     serie.innerHTML += '<p class="parrafo">'+"Cantidad de episodios:"+' '+unaSerie.number_of_episodes+'</p>'
      serie.innerHTML += '<p class="parrafo">'+"Fecha de estreno:"+' '+unaSerie.first_air_date+'</p>'
      serie.innerHTML += '<p class="parrafo">'+"Lenguaje original:"+' '+unaSerie.original_language+'</p>'
      serie.innerHTML += '<br>'
@@ -39,4 +39,19 @@ console.log(unaSerie);
   })
   .catch(function (errores) {
     console.log(errores);
+
   });
+
+  fetch('https://api.themoviedb.org/3/tv/1412/videos?api_key=6155fe2039bc62a9217a46c95e05b980&language=en-US')
+.then(function(response){
+  return response.json();
+})
+.then(function(obj) {
+  console.log(obj);
+  for (var i = 0; i < obj.results.length; i++) {
+    document.querySelector('body').innerHTML += '<iframe width="420" height="315" src="https://www.youtube.com/embed/'+obj.results[i].key+'"></iframe>'
+  }
+})
+.catch(function(error){
+  console.log(error);
+})
