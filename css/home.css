@@ -32,3 +32,7 @@ button:hover{
   color: rgb(252,0,5);
   background-color: white;
 }
+
+.generos:hover .listaGeneros {
+  display: block;
+}

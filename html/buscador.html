@@ -1,13 +1,80 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta charset="utf-8">
+    <title> Chillflix </title>
+
+    <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/navBar.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <meta charset="utf-8">
-    <title></title>
+    <link rel="stylesheet" href="../css/series.css">
+    <script type="text/javascript" src="../uikit/js/uikit.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="../uikit/css/uikit.css">
+    <script src="https://kit.fontawesome.com/7d40ec53ba.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
   <body>
+    <header>
+      <ul class="botonesNav">
+        <li class="generos">
+          <ul>
+            <a href=""><li> GENEROS </li>
+              <ul class="listaGeneros">
 
-  </body>
-</html>
-<script type="text/javascript" src="../js/buscador.js"></script>
+              </ul>
+            </a>
+          </ul>
+
+        </li>
+        <li class="home">
+          <a href="home.html"> HOME </a>
+        </li>
+        <li class="series">
+          <a href="series.html"> SERIES </a>
+        </li>
+
+        <form class="" action="buscador.html" method="get">
+          <input type="text" name="searchbox" value="" class="buscador">
+          <button type="submit"  class="boton" >BUSCAR</button>
+        </form>
+      </ul>
+      <ul>
+
+      </ul>
+      <div class="container_logo">
+        <img src="../images/logofinal.PNG" alt="" class="logo">
+      </div>
+
+    </header>
+    <main>
+
+      <section class="todas">
+        <h2 class="titulos">  </h2>
+        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider id="contTodas">
+          <ul class="uk-slider-items uk-child-width-1-6@s uk-child-width-1-4@">
+          </ul>
+          <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+          <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        </div>
+      </section>
+
+
+  </main>
+    <footer>
+      <ul>
+        <li> Agnes Dormal </li>
+        <li> Santiago Bello </li>
+        <li> Augusto Cech </li>
+      </ul>
+      <img src="../images/logoTMDB.png" alt="" class="logo2">
+    </footer>
+      </body>
+    </html>
+
+    <script type="text/javascript" src="../js/genres.js"></script>
+    <script type="text/javascript" src="../js/navBar.js"></script>
+    <script type="text/javascript" src="../js/buscador.js"></script>

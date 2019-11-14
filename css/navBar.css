@@ -145,19 +145,3 @@ text-decoration: none;
   top: 10px;
 
 }
-
-div.logosHeader{
-
-
-    align-items: center;
-    display: flex;
-    right: 180px;
-    position: absolute;
-    bottom: 15px;
-    height: 50%;
-    font-size: 30px;
-    justify-content: space-between;
-    color: rgb(208,208,208);
-
-
-}

@@ -5,7 +5,10 @@
     <title> Chillflix </title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script type="text/javascript" src="../uikit/js/uikit.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css" />
     <link rel="stylesheet" href="../uikit/css/uikit.css">
     <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text&display=swap" rel="stylesheet">
 
@@ -23,7 +26,7 @@
       <ul class="botonesNav">
         <li class="generos">
           <ul>
-            <a href="genres.html"><li> GENEROS </li>
+            <a href=""><li> GENEROS </li>
               <ul class="listaGeneros">
 
               </ul>
@@ -38,9 +41,9 @@
           <a href="series.html"> SERIES </a>
         </li>
 
-        <form class="" action="index.html" method="post">
-          <input type="search" name="" value="" class="buscador">
-          <button type="search" name="button" class="boton">BUSCAR</button>
+        <form class="" action="buscador.html" method="get">
+          <input type="text" name="searchbox" value="" class="buscador">
+          <button type="submit"  class="boton" >BUSCAR</button>
         </form>
       </ul>
       <ul>
@@ -48,18 +51,21 @@
       </ul>
       <div class="container_logo">
         <img src="../images/logofinal.PNG" alt="" class="logo">
-      </div>
-      <div class="logosHeader">
-      <ul>
-        <div class="usuario">
-          <i class="far fa-user" > </i>
+
+        <a class="uk-button uk-button-default" href="#modal-center" uk-toggle><span uk-icon="user"></span>
+</a>
+
+    <div id="modal-center" class="uk-flex-top" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
         </div>
-      </ul>
-      <ul>
-        <div class="lupa">
-          <i class="fas fa-search"></i>
-        </div>
-      </ul>
+    </div>
+
+
     </header>
 
 

@@ -22,6 +22,11 @@ fetch(URL_DETALLE)
 
     var unaSerie = datos
     console.log(unaSerie.title);
+    for (var i = 0; i < unaSerie.genres; i++) {
+      unaSerie[i]
+    }
+
+    var genero = unaSerie[i]
      serie.innerHTML += '<h1 class="tituloSerie">'+unaSerie.name+'</h1>'
      serie.innerHTML += '<div class="imgSerieContainer"><img class="imgSerie" src="'+URL_IMG+unaSerie.poster_path+'" alt="">'
      serie.innerHTML += '</div>'
@@ -30,10 +35,12 @@ fetch(URL_DETALLE)
      serie.innerHTML += '<p class="parrafo">'+"Cantidad de episodios:"+' '+unaSerie.number_of_episodes+'</p>'
      serie.innerHTML += '<p class="parrafo">'+"Fecha de estreno:"+' '+unaSerie.first_air_date+'</p>'
      serie.innerHTML += '<p class="parrafo">'+"Lenguaje original:"+' '+unaSerie.original_language+'</p>'
+     serie.innerHTML += '<p class="parrafo">'+"Generos:"+' '+genero.name+'</p>'
+
      serie.innerHTML += '<br>'
      serie.innerHTML += '<br>'
      serie.innerHTML += '<br>'
-     serie.innerHTML += '<br>'
+
 console.log(unaSerie);
 
   })
@@ -42,7 +49,7 @@ console.log(unaSerie);
 
   });
 
-  fetch('https://api.themoviedb.org/3/tv/1412/videos?api_key=6155fe2039bc62a9217a46c95e05b980&language=en-US')
+  fetch('https://api.themoviedb.org/3/tv/'+id+'/videos?api_key=6155fe2039bc62a9217a46c95e05b980&language=en-US')
 .then(function(response){
   return response.json();
 })
