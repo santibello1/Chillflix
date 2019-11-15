@@ -6,20 +6,30 @@ main{
 
 
 .imgSerieContainer{
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 600px;
   margin-left: auto;
   margin-right: auto;
+  align-self: flex-start;
+
 }
 
+
+.detalles{
+margin-left: 20px;
+margin-right: 20px;
+
+}
 .imgSerie {
   width: 100%;
   height: 100%;
+
 }
 
 .tituloSerie {
   text-align: center;
-
+  color: red;
+  font-family: 'Big Shoulders Text', cursive;
 }
 
 .body{
