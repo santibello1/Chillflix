@@ -7,10 +7,13 @@ var busqueda = queryStringObj.get("searchbox");
 var URL_TODAS = "https://api.themoviedb.org/3/search/tv?api_key=6155fe2039bc62a9217a46c95e05b980&language=en-US&query="+busqueda+"&page=1";
 var texto = document.querySelector('.titulos')
 texto.innerHTML = "texto buscado:"+" "+busqueda+""
-if (busqueda == "") {
-  alert("La casilla está vacia")
+// if (busqueda == "") {
+//   alert("La casilla está vacia")
+//
+// }
 
-}
+
+
 
 
 fetch(URL_TODAS)
