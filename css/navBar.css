@@ -6,7 +6,7 @@ header {
   font-family: Arial,Helvetica,sans-serif;
   margin-top: -20px;
   text-decoration: none;
-
+  z-index: 999px;
 }
 .botonesNav{
   position: absolute;
@@ -17,10 +17,13 @@ header {
   width: 800px;
   text-decoration: none;
   list-style: none;
-
+  z-index: 10000;
 
 }
 
+.botonesNav ul{
+  z-index: 999px;
+}
 .botonesNav a:hover{
   color: rgb(252,0,5);
 
@@ -53,6 +56,7 @@ text-decoration: none;
 
 .generos ul li:hover a{
   background-color: #434343;
+  z-index: 999px;
 }
 
 .generos ul li a {
@@ -61,9 +65,39 @@ text-decoration: none;
 
 .listaGeneros {
   display: none;
+  z-index: 999px;
+}
+.listaGeneros ul{
+  z-index: 999px;
 }
 
+.buscadorPersonalizado{
+  height: 20px;
+  margin-top: 9px;
+  margin-right: 60px;
+  text-decoration: none;
+  left: 100px;
+  width: 50px;
+  position: relative;
+  right: 10px;
+  color: white;
+}
 
+.buscadorpersonalizado a{
+  color: white;
+  text-decoration: none;
+  margin-right: 100px;
+  left: 100px;
+
+}
+.containerPersonalizado{
+  margin-right: 10px;
+
+  width: 200px;
+  margin-left: 1000px;
+  margin-bottom: 0px;
+  color: white;
+}
 
 .home {
 
@@ -144,4 +178,33 @@ text-decoration: none;
   right: 50px;
   top: 10px;
 
+}
+
+
+.buscadorPersonalizado{
+  height: 20px;
+  margin-top: 9px;
+  margin-right: 60px;
+  text-decoration: none;
+  left: 100px;
+  width: 50px;
+  top: 35px;
+
+}
+
+.buscadorPersonalizado a {
+  color: white;
+  text-decoration: none;
+  margin-right: 100px;
+  left: 100px;
+}
+
+.buscadorPersonalizado a:hover{
+  color: rgb(252,0,5);
+
+    text-decoration: none;
+
+}
+.containerPersonalizado{
+  list-style: none;
 }

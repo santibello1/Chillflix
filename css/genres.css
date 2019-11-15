@@ -1,10 +1,11 @@
 
 .generos:hover .listaGeneros {
   display: block;
+  z-index: 900px;
 }
 
 #cont{
-  border: solid red 2px;
+
 }
 
 .titulos {
@@ -18,7 +19,7 @@
 
 
 .container {
-  border: red solid 2px;
+
   width: 90%;
   margin-left: auto;
   margin-right: auto;

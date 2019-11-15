@@ -20,17 +20,21 @@ fetch(URL_TODAS)
   .then(function(objetoLiteralRespuesta) {
     console.log(objetoLiteralRespuesta);
     var todasLasSeries = objetoLiteralRespuesta.results
-    var todas = document.querySelector ('.todas ul')
+    var todas = document.querySelector ('.todas ')
     var div = ''
     console.log(todas);
     for (var i = 0; i < todasLasSeries.length; i++) {
+      if (todasLasSeries[i].poster_path == null) {
+        var poster = '../images/nodispo.JPG"'
+      }else {
+        var poster = URL_IMG+ todasLasSeries[i].poster_path
+      }
 
-
-      div = '<li>'
-      div = '<a href="detalleDePeliculas.html?idPeli=' + todasLasSeries[i].id + '">'
-      div += '<img src="'+URL_IMG+todasLasSeries[i].poster_path+'" alt="">'
+      div += '<div class="buscadas">'
+      div += '<a href="detalleDePeliculas.html?idPeli=' + todasLasSeries[i].id + '">'
+      div += '<img src="'+poster+'" alt="">'
       div += '</a>'
-      div += '</li>'
+      div += '</div>'
 
       todas.innerHTML += div
     }

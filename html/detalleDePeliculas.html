@@ -10,6 +10,8 @@
       <title> Chillflix </title>
       <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css" />
+
       <link rel="stylesheet" href="../css/home.css">
       <link rel="stylesheet" href="../css/navBar.css">
       <link rel="stylesheet" href="../css/footer.css">
@@ -49,6 +51,11 @@
         <ul>
 
         </ul>
+        <ul class="containerPersonalizado">
+          <li class="buscadorPersonalizado">
+            <a href="buscadorpersonalizado.html"> BUSCADOR AVANZADO </a>
+          </li>
+        </ul>
         <div class="container_logo">
           <img src="../images/logofinal.PNG" alt="" class="logo">
         </div>
@@ -57,7 +64,21 @@
 
 <main>
 
+<section class="detalles">
 
+</section>
+<section class="trailer">
+
+</section>
+  <section class="">
+    <h2 class="titulos"> Series recomendadas: </h2>
+    <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider id="contRecomen">
+      <ul class="uk-slider-items uk-child-width-1-6@s uk-child-width-1-4@ re">
+      </ul>
+      <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+      <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    </div>
+  </section>
 </main>
   <footer>
     <ul>

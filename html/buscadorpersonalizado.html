@@ -50,6 +50,11 @@
       <ul>
 
       </ul>
+      <ul class="containerPersonalizado">
+        <li class="buscadorPersonalizado">
+          <a href="buscadorpersonalizado.html"> BUSCADOR AVANZADO </a>
+        </li>
+      </ul>
       <div class="container_logo">
         <img src="../images/logofinal.PNG" alt="" class="logo">
     </div>
@@ -61,7 +66,7 @@
 
 <div class="container">
 
-<form class="personalizado" action="buscador.html" method="get">
+<form class="personalizado" action="resultadobuscadorper.html" method="get">
 
 <p class="generoSi">Género que desea buscar: </p>
 <p class="generoNo">Género que desea excluir:</p>
@@ -69,21 +74,29 @@
 <p class="orden">Orden de los resultados:</p>
 
 
-<button type="button" name="button" class="boton2"> BUSCAR </button>
+<button type="sumbit" name="button" class="boton2"> BUSCAR </button>
 
 
-  <select class="select-generos" name="">
-
-  </select>
-  <br>
-
-  <select class="select-generos_2" name="">
+  <select class="select-generos" name="generoSi">
+    <option value=""></option>
 
   </select>
   <br>
 
-  <input type="date" name="" value="" class="date">
+  <select class="select-generos_2" name="generoNo">
+    <option value=""></option>
 
+  </select>
+  <br>
+
+  <input type="date" name="fechaDeEstreno" value="" class="date">
+<select class="ordenes" name="orden">
+<option value=""></option>
+<option value="vote_average.desc">vote_average</option>
+<option value="first_air_date.desc">first_air_date</option>
+<option value="popularity.desc">popularity</option>
+
+</select>
 
 </form>
 </div>
