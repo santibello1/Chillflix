@@ -23,12 +23,16 @@ fetch(URL_TODAS)
   .then(function(objetoLiteralRespuesta) {
     console.log(objetoLiteralRespuesta);
     var todasLasSeries = objetoLiteralRespuesta.results
+    if (todasLasSeries.length < 1) {
+      texto.innerHTML = "No se han encontrado series"
+    }
+    console.log(todasLasSeries);
     var todas = document.querySelector ('.todas ')
     var div = ''
     console.log(todas);
     for (var i = 0; i < todasLasSeries.length; i++) {
       if (todasLasSeries[i].poster_path == null) {
-        var poster = '../images/nodispo.JPG"'
+        var poster = '../images/nodispo4.JPG"'
       }else {
         var poster = URL_IMG+ todasLasSeries[i].poster_path
       }
@@ -40,5 +44,7 @@ fetch(URL_TODAS)
       div += '</div>'
 
       todas.innerHTML += div
+
+
     }
   })

@@ -30,6 +30,7 @@ fetch(URL_DETALLE)
      serie.innerHTML += '<h1 class="tituloSerie">'+unaSerie.name+'</h1>'
      serie.innerHTML += '<div class="imgSerieContainer"><img class="imgSerie" src="'+URL_IMG+unaSerie.poster_path+'" alt="">'
      serie.innerHTML += '</div>'
+     serie.innerHTML += '<button class="botonFav" type="button" name=""> agregar a favoritas </button>'
      serie.innerHTML += '<p class="parrafo">'+unaSerie.overview+'</p>'
      serie.innerHTML += '<p class="parrafo">'+"Puntaje:"+' '+unaSerie.vote_average+'</p>'
      serie.innerHTML += '<p class="parrafo">'+"Cantidad de episodios:"+' '+unaSerie.number_of_episodes+'</p>'

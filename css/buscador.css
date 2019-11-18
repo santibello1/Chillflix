@@ -4,6 +4,15 @@
 
 
 }
+
+@media (max-width: 599px){
+
+  .buscadas {
+    width: 48%;
+  }
+}
+
+
 .buscadas img{
   width: 100%;
 }
@@ -14,4 +23,12 @@ width: 100%;
 flex-wrap: wrap;
 margin-left: 25px;
 margin-right: auto;
+}
+
+.todas {
+  background-color:  #262525;
+}
+
+main {
+  background-color:  #262525;
 }

@@ -5,7 +5,6 @@
     <title> Chillflix </title>
 
     <link rel="stylesheet" href="../css/home.css">
-    <link rel="stylesheet" href="../css/buscador.css">
     <link rel="stylesheet" href="../css/navBar.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/series.css">
@@ -16,6 +15,7 @@
     <link rel="stylesheet" href="../uikit/css/uikit.css">
     <script src="https://kit.fontawesome.com/7d40ec53ba.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/buscador.css">
 
   </head>
   <body>
@@ -39,7 +39,7 @@
         </li>
 
         <form class="" action="buscador.html" method="get">
-          <input type="text" name="searchbox" value="" class="buscador">
+          <input minlength="3" type="text" name="searchbox" value="" class="buscador">
           <button type="submit"  class="boton" >BUSCAR</button>
         </form>
       </ul>
@@ -59,14 +59,7 @@
     <main>
 
         <h2 class="titulos">  </h2>
-      <!-- <section class="todas">
-        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider id="contTodas">
-          <ul class="uk-slider-items uk-child-width-1-6@s uk-child-width-1-4@">
-          </ul>
-          <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-          <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-        </div>
-      </section> -->
+  
 
 <section class="todas">
 
@@ -87,3 +80,4 @@
     <script type="text/javascript" src="../js/genres.js"></script>
     <script type="text/javascript" src="../js/navBar.js"></script>
     <script type="text/javascript" src="../js/buscador.js"></script>
+    <script type="text/javascript" src="../js/validacionbuscador.js"></script>

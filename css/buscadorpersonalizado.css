@@ -27,7 +27,7 @@ button:hover{
 
 
 main{
-  background-color: rgb(64,64,64);
+  background-color:  #262525;
 }
 
 
@@ -133,4 +133,8 @@ main{
   top: 250px;
   left: 550px;
 
+}
+
+.titulos {
+  height: 50px;
 }
